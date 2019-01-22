@@ -112,7 +112,7 @@ class Node(AbstractNode):
 
     @classmethod
     def from_global_id(cls, global_id):
-        return from_global_id(global_id)
+        return global_id.split(':')
 
     @classmethod
     def to_global_id(cls, type, id):
